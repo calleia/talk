@@ -14,6 +14,8 @@
 		FBA1DA841EE1ED4F006A814B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA1DA821EE1ED4F006A814B /* LaunchScreen.storyboard */; };
 		FBA1DA8F1EE1ED4F006A814B /* TalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1DA8E1EE1ED4F006A814B /* TalkTests.swift */; };
 		FBA1DA9A1EE1ED4F006A814B /* TalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1DA991EE1ED4F006A814B /* TalkUITests.swift */; };
+		FBA1DAA91EE1F1E9006A814B /* CleverbotChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1DAA81EE1F1E9006A814B /* CleverbotChatModel.swift */; };
+		FBA1DAAC1EE1F317006A814B /* CleverbotDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1DAAB1EE1F317006A814B /* CleverbotDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FBA1DA951EE1ED4F006A814B /* TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA1DA991EE1ED4F006A814B /* TalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkUITests.swift; sourceTree = "<group>"; };
 		FBA1DA9B1EE1ED4F006A814B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA1DAA81EE1F1E9006A814B /* CleverbotChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleverbotChatModel.swift; sourceTree = "<group>"; };
+		FBA1DAAB1EE1F317006A814B /* CleverbotDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleverbotDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		FBA1DA781EE1ED4F006A814B /* Talk */ = {
 			isa = PBXGroup;
 			children = (
+				FBA1DAAA1EE1F302006A814B /* Services */,
+				FBA1DAA71EE1F17A006A814B /* Models */,
 				FBA1DA791EE1ED4F006A814B /* AppDelegate.swift */,
 				FBA1DA7B1EE1ED4F006A814B /* ViewController.swift */,
 				FBA1DA7D1EE1ED4F006A814B /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				FBA1DA9B1EE1ED4F006A814B /* Info.plist */,
 			);
 			path = TalkUITests;
+			sourceTree = "<group>";
+		};
+		FBA1DAA71EE1F17A006A814B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1DAA81EE1F1E9006A814B /* CleverbotChatModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FBA1DAAA1EE1F302006A814B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1DAAB1EE1F317006A814B /* CleverbotDataManager.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA1DAAC1EE1F317006A814B /* CleverbotDataManager.swift in Sources */,
 				FBA1DA7C1EE1ED4F006A814B /* ViewController.swift in Sources */,
+				FBA1DAA91EE1F1E9006A814B /* CleverbotChatModel.swift in Sources */,
 				FBA1DA7A1EE1ED4F006A814B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +531,7 @@
 				FBA1DAA01EE1ED4F006A814B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA1DAA11EE1ED4F006A814B /* Build configuration list for PBXNativeTarget "TalkTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +540,7 @@
 				FBA1DAA31EE1ED4F006A814B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA1DAA41EE1ED4F006A814B /* Build configuration list for PBXNativeTarget "TalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +549,7 @@
 				FBA1DAA61EE1ED4F006A814B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
